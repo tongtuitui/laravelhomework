@@ -24,7 +24,7 @@
                 </div>
                 <button type="submit" class="btn btn-block btn-primary">Sign In</button>
                 <br>
-                <a href="">I don't have an account, create new</a>
+                <a href="{{ route('auth.register') }}">I don't have an account, create new</a>
             </form>
         </div>
     </div>

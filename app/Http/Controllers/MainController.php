@@ -10,4 +10,18 @@ class MainController extends Controller
         return view('auth.login');
         
     }
+
+    function register(){
+        return view('auth.register');
+    }
+
+    function save(Request $request){
+        
+        //Validate requests
+        $request->validate([
+            'name'=>'required',
+            'email'=>'required|email',
+            'password'=>'required|min:5|max:12'
+        ]);
+    }
 }
